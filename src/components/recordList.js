@@ -44,7 +44,7 @@ export default function RecordList() {
 
   // This method will delete a record
   async function deleteRecord(id) {
-    await fetch(`https://dwl7kf3crwu6i.cloudfront.net//${id}`, {
+    await fetch(`https://dwl7kf3crwu6i.cloudfront.net/${id}`, {
       method: "DELETE"
     });
 
@@ -68,7 +68,7 @@ export default function RecordList() {
   // This following section will display the table with the records of individuals.
   return (
     <div>
-      <h3>Lista de emppleados</h3>
+      <h3>Lista de empleados</h3>
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
           <tr>

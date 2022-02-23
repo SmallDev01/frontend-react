@@ -23,7 +23,7 @@ export default function Create() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newPerson = { ...form };
 
-    await fetch("https://dwl7kf3crwu6i.cloudfront.net//record/add", {
+    await fetch("https://dwl7kf3crwu6i.cloudfront.net/record/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
