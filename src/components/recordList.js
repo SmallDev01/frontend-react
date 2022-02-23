@@ -25,7 +25,7 @@ export default function RecordList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`http://backendnodealvaro-env.eba-ngeycm8c.eu-west-3.elasticbeanstalk.com/record/`);
+      const response = await fetch(`http://backendnodealvaro-env.eba-ngeycm8c.eu-west-3.elasticbeanstalk.com/record`);
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
