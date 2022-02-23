@@ -12,7 +12,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <NavLink className="navbar-brand" to="/">
-        <img style={{"width" : 25 + '%'}} src="../../public/logosmalldev.png"></img>
+        <img style={{"width" : 25 + '%'}} src="https://smalldev.es/wp-content/uploads/2021/12/logo_small.png"></img>
         </NavLink>
         <button
           className="navbar-toggler"
