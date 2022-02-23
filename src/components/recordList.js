@@ -25,7 +25,7 @@ export default function RecordList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`https://dwl7kf3crwu6i.cloudfront.net//record`);
+      const response = await fetch(`http://localhost:5000/record/`);
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
@@ -44,7 +44,7 @@ export default function RecordList() {
 
   // This method will delete a record
   async function deleteRecord(id) {
-    await fetch(`https://dwl7kf3crwu6i.cloudfront.net/${id}`, {
+    await fetch(`http://localhost:5000/${id}`, {
       method: "DELETE"
     });
 
@@ -68,14 +68,14 @@ export default function RecordList() {
   // This following section will display the table with the records of individuals.
   return (
     <div>
-      <h3>Lista de empleados</h3>
+      <h3>Record List</h3>
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Posicion</th>
-            <th>Nivel</th>
-            <th>Tipo</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Level</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>{recordList()}</tbody>
