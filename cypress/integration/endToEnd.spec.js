@@ -6,7 +6,7 @@ describe('Web site availability', () => {
       }); 
       it('Sanity listings web site', () => {
         cy.visit('http://localhost:3000');
-        cy.contains('Create Record').should('exist');
+        cy.contains('Crear Registro').should('exist');
       });
       it('Test Adding Employee listings', () => {
         cy.visit('http://localhost:3000/create');
